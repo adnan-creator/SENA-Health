@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/senalight</color>
+    <color name="colorPrimaryDark">@color/senadark</color>
+    <color name="colorAccent">@color/black</color>
+
+    <color name="grey">#505050</color>
+    <color name="grey_light">#979797</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="green">#3AE341</color>
+    <color name="peach">#FBF6C6</color>
+
+    <color name="senadark">#0f1e4a</color>
+    <color name="senalight">#89b7c6</color>
+    <color name="senalighter">#b9e5f1</color>
+</resources>

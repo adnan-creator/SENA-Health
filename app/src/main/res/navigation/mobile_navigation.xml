@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="pk.mohammadadnan.senahealth.ui.fragments.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/home_to_vitals"
+            app:destination="@id/vitalsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_add"
+        android:name="pk.mohammadadnan.senahealth.ui.fragments.AddFragment"
+        android:label="@string/title_add"
+        tools:layout="@layout/fragment_add" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="pk.mohammadadnan.senahealth.ui.fragments.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/vitalsFragment"
+        android:name="pk.mohammadadnan.senahealth.ui.fragments.VitalsFragment"
+        android:label="fragment_vitals"
+        tools:layout="@layout/fragment_vitals" />
+</navigation>

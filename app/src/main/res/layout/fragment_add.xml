@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_two"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.fragments.AddFragment">
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ic_sena_hori"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card_view2" />
+
+        <TextView
+            android:id="@+id/name_home2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:text="Add New Log"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toStartOf="@+id/cardView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp"
+            app:layout_constraintBottom_toTopOf="@id/imageView17"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_bt"
+            app:layout_constraintVertical_chainStyle="spread_inside">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:clickable="false">
+
+                <Button
+                    android:id="@+id/save_manual"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/button_blue"
+                    android:stateListAnimator="@null"
+                    android:text="SAVE"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edit_three_manual" />
+
+                <EditText
+                    android:id="@+id/edit_three_manual"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/xml_rounded_grey"
+                    android:ems="4"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:padding="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/unit_three_manual" />
+
+                <EditText
+                    android:id="@+id/edit_two_manual"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/xml_rounded_grey"
+                    android:ems="4"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:padding="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/unit_two_manual" />
+
+                <EditText
+                    android:id="@+id/edit_one_manual"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/xml_rounded_grey"
+                    android:ems="4"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:padding="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/unit_one_manual" />
+
+                <ImageView
+                    android:id="@+id/item_icon2"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="?attr/actionModePasteDrawable"
+                    app:tint="@color/black" />
+
+                <ImageView
+                    android:id="@+id/pressure_ic_manual"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/temp_ic_manual"
+                    app:layout_constraintStart_toEndOf="@+id/glucose_ic_manual"
+                    app:layout_constraintTop_toTopOf="@+id/glucose_ic_manual"
+                    app:srcCompat="@drawable/meas_pressure_circle"
+                    app:tint="@color/grey_light" />
+
+                <ImageView
+                    android:id="@+id/temp_ic_manual"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/weight_ic_manual"
+                    app:layout_constraintStart_toEndOf="@+id/pressure_ic_manual"
+                    app:layout_constraintTop_toTopOf="@+id/pressure_ic_manual"
+                    app:srcCompat="@drawable/meas_temp_circle"
+                    app:tint="@color/grey_light" />
+
+                <ImageView
+                    android:id="@+id/weight_ic_manual"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/oxygen_ic_manual"
+                    app:layout_constraintStart_toEndOf="@+id/temp_ic_manual"
+                    app:layout_constraintTop_toTopOf="@+id/temp_ic_manual"
+                    app:srcCompat="@drawable/meas_weight_circle"
+                    app:tint="@color/grey_light" />
+
+                <ImageView
+                    android:id="@+id/glucose_ic_manual"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/pressure_ic_manual"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/item_title2"
+                    app:srcCompat="@drawable/meas_glucose_circle"
+                    app:tint="@color/colorPrimary" />
+
+                <ImageView
+                    android:id="@+id/oxygen_ic_manual"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/weight_ic_manual"
+                    app:layout_constraintTop_toTopOf="@+id/weight_ic_manual"
+                    app:srcCompat="@drawable/meas_oxygen_circle"
+                    app:tint="@color/grey_light" />
+
+                <TextView
+                    android:id="@+id/title_three_manual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Pulse Rate"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edit_two_manual" />
+
+                <TextView
+                    android:id="@+id/unit_three_manual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="bpm"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title_three_manual" />
+
+                <TextView
+                    android:id="@+id/title_two_manual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Diastolic"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/edit_one_manual" />
+
+                <TextView
+                    android:id="@+id/unit_two_manual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="mmHg"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title_two_manual" />
+
+                <TextView
+                    android:id="@+id/title_one_manual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Systolic"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/glucose_tx_manual" />
+
+                <TextView
+                    android:id="@+id/unit_one_manual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="mmHg"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/title_one_manual" />
+
+                <TextView
+                    android:id="@+id/item_title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Manual Log"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/item_icon2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/glucose_tx_manual"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Glucose"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/glucose_ic_manual"
+                    app:layout_constraintStart_toStartOf="@+id/glucose_ic_manual"
+                    app:layout_constraintTop_toBottomOf="@+id/glucose_ic_manual" />
+
+                <TextView
+                    android:id="@+id/pressure_tx_manual"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Pressure"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey_light"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/pressure_ic_manual"
+                    app:layout_constraintStart_toStartOf="@+id/pressure_ic_manual"
+                    app:layout_constraintTop_toBottomOf="@+id/pressure_ic_manual" />
+
+                <TextView
+                    android:id="@+id/temp_tx_manual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Temperature"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey_light"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/temp_ic_manual"
+                    app:layout_constraintStart_toStartOf="@+id/temp_ic_manual"
+                    app:layout_constraintTop_toBottomOf="@+id/temp_ic_manual" />
+
+                <TextView
+                    android:id="@+id/weight_tx_manual"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Weight"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey_light"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/weight_ic_manual"
+                    app:layout_constraintStart_toStartOf="@+id/weight_ic_manual"
+                    app:layout_constraintTop_toBottomOf="@+id/weight_ic_manual" />
+
+                <TextView
+                    android:id="@+id/oxygen_tx_manual"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Oxygen Saturation"
+                    android:textAlignment="center"
+                    android:textColor="@color/grey_light"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/oxygen_ic_manual"
+                    app:layout_constraintStart_toStartOf="@+id/oxygen_ic_manual"
+                    app:layout_constraintTop_toBottomOf="@+id/oxygen_ic_manual" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_home2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:clickable="false">
+
+                <TextView
+                    android:id="@+id/text_bt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="Click on scan to look for your bluetooth device"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/item_title1" />
+
+                <Button
+                    android:id="@+id/scan_bt"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/button_blue"
+                    android:stateListAnimator="@null"
+                    android:text="SCAN"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/read_bt"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinner_bt" />
+
+                <Button
+                    android:id="@+id/read_bt"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/button_blue"
+                    android:stateListAnimator="@null"
+                    android:text="READ"
+                    android:textColor="@color/white"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="@+id/scan_bt"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/scan_bt" />
+
+                <ImageView
+                    android:id="@+id/item_icon1"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/stat_sys_data_bluetooth"
+                    app:tint="@color/black" />
+
+                <Spinner
+                    android:id="@+id/spinner_bt"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/xml_rounded_grey"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/text_bt" />
+
+                <TextView
+                    android:id="@+id/item_title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Bluetooth Log"
+                    android:textAllCaps="true"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    app:layout_constraintStart_toEndOf="@+id/item_icon1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
